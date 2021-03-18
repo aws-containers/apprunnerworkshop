@@ -1,4 +1,4 @@
-# ecsworkshop
+# Fusion (will s/Fusion/App Runner once finalized)
 
 ### Setup:
 
