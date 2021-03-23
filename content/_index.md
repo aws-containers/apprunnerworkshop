@@ -4,11 +4,6 @@ chapter: true
 weight: 1
 ---
 
-{{% notice note %}}
-For even more container related content, check out our new show:
-[Containers from the Couch](https://containersfromthecouch.com)
-{{% /notice %}}
-
 ## Amazon Fusion Workshop
 
 ![3-service-animated](/images/3-service-animated.gif)
