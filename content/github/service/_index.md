@@ -1,5 +1,5 @@
 ---
-title: "Creating the AWS App Runner Service"
+title: "Creating the service"
 chapter: true
 weight: 15
 pre: '<i class="fa fa-film" aria-hidden="true"></i> '
@@ -58,3 +58,7 @@ In this step we will give our new service a name - “simple-express-app”. Lea
 Finally, review your settings and select “Create & deploy”. This will take a few minutes.
 
 ![Github Link](/images/service-creating.png)
+
+Once status has moved to “Complete", you can click on the url listed below "Default domain" in order to view the actual web application you have just deployed.
+
+Congratulations, you’ve just deployed a simple web service using Fusion!
