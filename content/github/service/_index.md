@@ -1,5 +1,5 @@
 ---
-title: "Amazon AWS App Runner Workshop - Deploying from Github"
+title: "Creating the AWS App Runner Service"
 chapter: true
 weight: 15
 pre: '<i class="fa fa-film" aria-hidden="true"></i> '
@@ -15,7 +15,7 @@ Select “Create a service”.
 
 ![Source Service](/images/service-source.png)
 
-For your Repository type, select “Source code repository”. This will require you to add a connection to Github in order for Fusion to deploy your new service. Select “Add new”.
+For your Repository type, select “Source code repository”. This will require you to add a connection to Github in order for AWS App Runner to deploy your new service. Select “Add new”.
 
 ![Github Link](/images/service-link-github1.png)
 
@@ -29,8 +29,32 @@ Confirm your password
 
 ![Github Link](/images/service-link-github4.png)
 
-Select the repository you created earlier within “Only select repositories”, and click “Save”. You’ll now be taken back to Step 1 within Fusion service creation.
+Select the repository you created earlier within “Only select repositories”, and click “Save”. You’ll now be taken back to Step 1 within AWS App Runner service creation.
 
 ![Github Link](/images/service-deployment1.png)
 
+Underneath Deployment trigger, select “Automatic” in order to automatically redeploy your application whenever a code change is pushed to the main branch of your Github repository, then select “Next”.
 
+![Github Link](/images/service-deployment2.png)
+
+For this example, we are going to specify all the settings for our service manually. This is in order to show the control that AWS App Runner gives you. Later we will demonstrate giving these settings through a configuration file contained within your code repository. 
+
+Select “Configure all settings here”, then underneath Runtime select “Nodejs 12” from the dropdown.
+
+Under Build commend, enter “npm install”
+
+Under Start command, enter “node index.js”
+
+Under Port, enter 3000
+
+Select ‘Next’ to continue.
+
+![Github Link](/images/service-deployment3.png)
+
+In this step we will give our new service a name - “simple-express-app”. Leave the rest of these settings as defaults. Select “Next” to continue.
+
+![Github Link](/images/service-deployment4.png)
+
+Finally, review your settings and select “Create & deploy”. This will take a few minutes.
+
+![Github Link](/images/service-creating.png)

@@ -1,5 +1,5 @@
 ---
-title: "Amazon AWS App Runner Workshop - Deploying from Github"
+title: "Creating a AWS App Runner Service"
 chapter: true
 weight: 5
 pre: '<i class="fa fa-film" aria-hidden="true"></i> '
