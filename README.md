@@ -13,10 +13,10 @@ On Linux:
 
 #### Clone this repo:
 From wherever you checkout repos:
-`git clone git@github.com:brentley/ecsworkshop.git`
+`git clone git@github.com:aws-containers/apprunnerworkshop.git`
 
 #### Clone the theme submodule:
-`cd ecsworkshop`
+`cd apprunnerworkshop`
 
 `git submodule init`
 
