@@ -5,9 +5,9 @@ weight: 10
 pre: '<i class="fa fa-film" aria-hidden="true"></i> '
 ---
 
-## Deploying a simple website to AWS App Runner using Github
+## Setting up a Github repository
 
-Let’s get started by creating a new Private repository on Github - this can be done by logging into Github, and then visiting https://github.com/new:
+Let’s get started by creating a new Private repository on Github - this can be done by logging into Github, and then visiting https://github.com/new
 
 ![Create Repository](/images/github-new-repository.png)
 
