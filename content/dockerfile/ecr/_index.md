@@ -45,4 +45,16 @@ You'll need a role which gives the AWS App Runner service access a Trust Relatio
   ]
 }```
 
-TODO
+NOTE: MISSING details around IAM guidance - hopefully the console can do this by time-of-preview.
+
+Once your role is created with access to ECR, return to https://console.aws-dev.amazon.com/fusion/home#/create to create a Fusion service using a Dockerfile.
+
+![Create Service](/images/docker-build1.png)
+
+Select "Container registry" from repository type, and "Amazon ECR" for provider. Under Container image URI, enter `AWS_ACCOUNT_ID.dkr.ecr.REGION.amazonaws.com/simple-express-container:latest` from above, substituting your AWS_ACCOUNT_ID in, along with your REGION.
+
+Select the service role you created above, and proceed to Next.
+
+IMAGE PLACEHOLDER
+
+Name your service - for example: "simple-express-container", and enter 3000 for your port, and proceed to Next, then click "Create & deploy" to initialise your service.
