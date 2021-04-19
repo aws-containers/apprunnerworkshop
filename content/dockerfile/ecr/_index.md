@@ -23,13 +23,14 @@ You will need to replace REGION and AWS_ACCOUNT_ID with the region you are using
 
 ```aws ecr get-login-password --region REGION | docker login --username AWS --password-stdin AWS_ACCOUNT_ID.dkr.ecr.REGION.amazonaws.com
 docker build -t simple-express-container .
-docker push AWS_ACCOUNT_ID.dkr.ecr.REGION.amazonaws.com/simple-express-container:latest```
+docker push AWS_ACCOUNT_ID.dkr.ecr.REGION.amazonaws.com/simple-express-container:latest
+```
 
 Return to the AWS App Runner console at: https://console.aws-dev.amazon.com/fusion/home#/create
 
 Select a repository type of "Container registry" and a provider of "Amazon ECR". Enter the URI listed previously when creating the `simple-express-repository` repository as the container image URI.
 
-You'll need a role which gives the AWS App Runner service access a Trust Relationship with ECR, and has access to required ECR resources. TEMPORARY NOTE: This will presumably change soon, for now the following trust relationship should work:
+You'll need a role which gives the AWS App Runner service access a Trust Relationship with ECR, and has access to required ECR resources. Create an IAM role which has the following trust relationship:
 
 ```{
   "Version": "2008-10-17",
@@ -43,9 +44,22 @@ You'll need a role which gives the AWS App Runner service access a Trust Relatio
       "Action": "sts:AssumeRole"
     }
   ]
-}```
+}
+```
 
-NOTE: MISSING details around IAM guidance - hopefully the console can do this by time-of-preview.
+Attach a policy to this role which allows access to the ECR repository in question:
+
+```{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "ecr:*",
+            "Resource": "*"
+        }
+    ]
+}
+```
 
 Once your role is created with access to ECR, return to https://console.aws-dev.amazon.com/fusion/home#/create to create a Fusion service using a Dockerfile.
 
@@ -55,6 +69,10 @@ Select "Container registry" from repository type, and "Amazon ECR" for provider.
 
 Select the service role you created above, and proceed to Next.
 
-IMAGE PLACEHOLDER
+![Create Service Part 2](/images/docker-build2.png)
 
-Name your service - for example: "simple-express-container", and enter 3000 for your port, and proceed to Next, then click "Create & deploy" to initialise your service.
+Name your service - for example: "simple-express-docker", and enter 3000 for your port, and proceed to Next, then click "Create & deploy" to initialise your service.
+
+Wait for your service to be deployed. You can click on your newly created service and follow the URL to access your service.
+
+![Create Service Part 3](/images/docker-status1.png)

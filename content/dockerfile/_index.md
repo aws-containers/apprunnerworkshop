@@ -66,7 +66,7 @@ EXPOSE 3000
 CMD [ "node", "index.js" ]
 ```
 
-This means you should have the following files in your directory:
+You should now have the following files in your directory:
 
 ```bash
 iamtim@mypc:~/apprunner-example$ ls
