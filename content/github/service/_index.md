@@ -2,7 +2,6 @@
 title: 'Creating the service'
 chapter: true
 weight: 15
-pre: '<i class="fa fa-film" aria-hidden="true"></i> '
 ---
 
 ## Setting up the AWS App Runner Service
