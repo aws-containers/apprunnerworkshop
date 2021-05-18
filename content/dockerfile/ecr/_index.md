@@ -32,14 +32,15 @@ Select a repository type of "Container registry" and a provider of "Amazon ECR".
 
 You'll need a role which gives the AWS App Runner service access a Trust Relationship with ECR, and has access to required ECR resources. Create an IAM role which has the following trust relationship:
 
-```{
+```
+{
   "Version": "2008-10-17",
   "Statement": [
     {
       "Sid": "",
       "Effect": "Allow",
       "Principal": {
-        "Service": "us-east-1.gamma.cells.build.bullet.aws.internal"
+        "Service": "build.apprunner.amazonaws.com"
       },
       "Action": "sts:AssumeRole"
     }
@@ -49,7 +50,8 @@ You'll need a role which gives the AWS App Runner service access a Trust Relatio
 
 Attach a policy to this role which allows access to the ECR repository in question:
 
-```{
+```
+{
     "Version": "2012-10-17",
     "Statement": [
         {
