@@ -1,4 +1,4 @@
-# Fusion (will s/Fusion/App Runner once finalized)
+# AWS App Runner Workshop
 
 ### Setup:
 

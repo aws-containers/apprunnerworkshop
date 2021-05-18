@@ -49,7 +49,7 @@ Paste the following code into the new file which you will name “package.json�
 
 ```json
 {
-  "name": "fusion_example",
+  "name": "apprunner_example",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -62,6 +62,6 @@ Paste the following code into the new file which you will name “package.json�
 }
 ```
 
-Select “Commit new file” in order to add this second file. We now have our repository prepared with a Node.js web service. For our next step, open the AWS console, and browse to the AWS App Runner service, or [https://console.aws.amazon.com/fusion/home](https://console.aws.amazon.com/console/home):
+Select “Commit new file” in order to add this second file. We now have our repository prepared with a Node.js web service. For our next step, open the AWS console, and browse to the AWS App Runner service, or [https://console.aws.amazon.com/apprunner/home](https://console.aws.amazon.com/apprunner/home):
 
 Your GitHub repository is now prepared. Proceed to the next section to run this repository using AWS App Runner.

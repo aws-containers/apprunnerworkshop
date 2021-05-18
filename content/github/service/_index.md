@@ -7,7 +7,7 @@ pre: '<i class="fa fa-film" aria-hidden="true"></i> '
 
 ## Setting up the AWS App Runner Service
 
-Open the AWS console, and browse to the AWS App Runner service, or [https://console.aws.amazon.com/fusion/home](https://console.aws.amazon.com/console/home):
+Open the AWS console, and browse to the AWS App Runner service, or [https://console.aws.amazon.com/apprunner/home](https://console.aws.amazon.com/apprunner/home):
 
 ![Create Service](/images/service-create-service.png)
 
@@ -19,7 +19,7 @@ For your Repository type, select “Source code repository”. This will require
 
 ![Github Link](/images/service-link-github1.png)
 
-Give your connection name a suitable name - for example `fusion-example-connection`. Install a GitHub app with access to the repository you have just created by choosing the organization in which you created your new repository. Select your own account name.
+Give your connection name a suitable name - for example `apprunner-example-connection`. Install a GitHub app with access to the repository you have just created by choosing the organization in which you created your new repository. Select your own account name.
 
 ![Github Link](/images/service-link-github2.png)
 
@@ -61,4 +61,4 @@ Finally, review your settings and select “Create & deploy”. This will take a
 
 Once status has moved to “Complete", you can click on the url listed below "Default domain" in order to view the actual web application you have just deployed.
 
-Congratulations, you have just deployed a simple web service using Fusion!
+Congratulations, you have just deployed a simple web service using App Runner!

@@ -26,7 +26,7 @@ docker build -t simple-express-container .
 docker push AWS_ACCOUNT_ID.dkr.ecr.REGION.amazonaws.com/simple-express-container:latest
 ```
 
-Return to the AWS App Runner console at: https://console.aws-dev.amazon.com/fusion/home#/create
+Return to the AWS App Runner console at: https://console.aws-dev.amazon.com/apprunner/home#/create
 
 Select a repository type of "Container registry" and a provider of "Amazon ECR". Enter the URI listed previously when creating the `simple-express-repository` repository as the container image URI.
 
@@ -61,7 +61,7 @@ Attach a policy to this role which allows access to the ECR repository in questi
 }
 ```
 
-Once your role is created with access to ECR, return to https://console.aws-dev.amazon.com/fusion/home#/create to create a Fusion service using a Dockerfile.
+Once your role is created with access to ECR, return to https://console.aws-dev.amazon.com/apprunner/home#/create to create an App Runner service using a Dockerfile.
 
 ![Create Service](/images/docker-build1.png)
 

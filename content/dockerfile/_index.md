@@ -33,7 +33,7 @@ app.listen(port, () => {
 
 ```json
 {
-  "name": "fusion_example",
+  "name": "apprunner_example",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
