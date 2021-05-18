@@ -26,29 +26,11 @@ editURL = "https://github.com/aws-containers/apprunnerworkshop/edit/main/content
 #
 
 [menu]
-  [[menu.main]]
-    identifier = "Prerequisites"
-    name = "This is the Mu track"
-    title = "Workshop using Mu"
-    url = "/mu/"
-    weight = -110
 
 [[menu.shortcuts]]
 name = "<i class='fab fa-youtube'></i> Containers from the Couch"
 url = "https://containersfromthecouch.com"
 weight = 1
-
-[[menu.shortcuts]]
-name = "<i class='fab fa-twitter fa-lg'></i> @brentContained"
-identifier = "tw"
-url = "https://twitter.com/intent/user?screen_name=brentContained"
-weight = 2
-
-[[menu.shortcuts]]
-name = "<i class='fab fa-twitter fa-lg'></i> @realadamjkeller"
-identifier = "twa"
-url = "https://twitter.com/intent/user?screen_name=realadamjkeller"
-weight = 3
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-chalkboard'></i> ECS Workshop"
