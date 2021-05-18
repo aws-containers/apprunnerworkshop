@@ -2,7 +2,7 @@
 title: 'Creating a AWS App Runner Service'
 chapter: true
 weight: 5
-pre: '<i class="fa fa-film" aria-hidden="true"></i> '
+# pre: '<i class="fa fa-film" aria-hidden="true"></i> '
 ---
 
 ## Deploying a simple website to AWS App Runner using Github
