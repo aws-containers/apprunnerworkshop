@@ -8,9 +8,6 @@ uglyurls = false
 sectionPagesMenu = "main"
 relativeURLs = true
 
-[blackfriday]
-hrefTargetBlank = true
-
 [params]
 themeVariant = "mine"
 showVisitedLinks = false
