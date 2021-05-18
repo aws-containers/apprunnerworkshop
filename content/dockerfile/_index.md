@@ -2,7 +2,6 @@
 title: 'Deploying an application using a Dockerfile'
 chapter: true
 weight: 25
-# pre: '<i class="fa fa-film" aria-hidden="true"></i> '
 ---
 
 ## Deploying to AWS App Runner with Docker

@@ -2,7 +2,6 @@
 title: 'Setting up ECR'
 chapter: true
 weight: 30
-pre: '<i class="fa fa-film" aria-hidden="true"></i> '
 ---
 
 ## Setting up an Amazon Elastic Container Registry (ECR)

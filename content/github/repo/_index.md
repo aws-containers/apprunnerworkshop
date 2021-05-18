@@ -2,7 +2,6 @@
 title: 'Setting up a Github repository'
 chapter: true
 weight: 10
-pre: '<i class="fa fa-film" aria-hidden="true"></i> '
 ---
 
 ## Setting up a Github repository
