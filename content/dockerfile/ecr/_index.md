@@ -16,7 +16,13 @@ Select "Create Repository" to proceed.
 
 ![Create Repository](/images/ecr2.png)
 
-Enter `simple-express-repository` as your Repository name, and select “Private” in order to limit access to your repository. Click on “Create repository” in order to finalize creation. One the repository is created, you'll need to note the URI listed as you'll need to refer to it later.
+Enter `simple-express-repository` as your Repository name, and select “Private” in order to limit access to your repository. Click on “Create repository” in order to finalize creation. Once the repository is created, you'll need to note the URI listed as you'll need to refer to it later.
+
+![View Push Commands](/images/view-push-commands.png)
+
+After the ECR repository is created, click the button to "View push commands" and copy the login command from step 1 (choosing your appropriate OS tab).
+
+-----
 
 You will need to replace REGION and AWS_ACCOUNT_ID with the region you are using the AWS console from, and with your AWS account ID for the follow commands:
 
