@@ -26,8 +26,11 @@ After the ECR repository is created, click the button to "View push commands" an
 
 You will need to replace REGION and AWS_ACCOUNT_ID with the region you are using the AWS console from, and with your AWS account ID for the follow commands:
 
-```aws ecr get-login-password --region REGION | docker login --username AWS --password-stdin AWS_ACCOUNT_ID.dkr.ecr.REGION.amazonaws.com
+```
+aws ecr get-login-password --region REGION | docker login --username AWS --password-stdin AWS_ACCOUNT_ID.dkr.ecr.REGION.amazonaws.com
+
 docker build -t simple-express-container .
+
 docker push AWS_ACCOUNT_ID.dkr.ecr.REGION.amazonaws.com/simple-express-container:latest
 ```
 
