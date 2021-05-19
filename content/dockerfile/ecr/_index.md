@@ -34,7 +34,7 @@ docker build -t simple-express-container .
 docker push AWS_ACCOUNT_ID.dkr.ecr.REGION.amazonaws.com/simple-express-container:latest
 ```
 
-Return to the AWS App Runner console at: https://console.aws-dev.amazon.com/apprunner/home#/create
+Return to the AWS App Runner console at: https://console.aws.amazon.com/apprunner/home#/create
 
 Select a repository type of "Container registry" and a provider of "Amazon ECR". Enter the URI listed previously when creating the `simple-express-repository` repository as the container image URI.
 
