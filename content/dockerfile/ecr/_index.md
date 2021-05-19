@@ -29,11 +29,11 @@ You will need to replace REGION and AWS_ACCOUNT_ID with the region you are using
 ```
 aws ecr get-login-password --region REGION | docker login --username AWS --password-stdin AWS_ACCOUNT_ID.dkr.ecr.REGION.amazonaws.com
 
-docker build -t simple-express-container .
+docker build -t simple-express-repository .
 
-docker tag simple-express-container:latest AWS_ACCOUNT_ID.dkr.ecr.REGION.amazonaws.com/simple-express-container:latest
+docker tag simple-express-repository:latest AWS_ACCOUNT_ID.dkr.ecr.REGION.amazonaws.com/simple-express-repository:latest
 
-docker push AWS_ACCOUNT_ID.dkr.ecr.REGION.amazonaws.com/simple-express-container:latest
+docker push AWS_ACCOUNT_ID.dkr.ecr.REGION.amazonaws.com/simple-express-repository:latest
 ```
 
 Return to the AWS App Runner console at: https://console.aws.amazon.com/apprunner/home#/create
@@ -77,7 +77,7 @@ Once your role is created with access to ECR, return to https://console.aws.amaz
 
 ![Create Service](/images/docker-build1.png)
 
-Select "Container registry" from repository type, and "Amazon ECR" for provider. Under Container image URI, enter `AWS_ACCOUNT_ID.dkr.ecr.REGION.amazonaws.com/simple-express-container:latest` from above, substituting your AWS_ACCOUNT_ID in, along with your REGION.
+Select "Container registry" from repository type, and "Amazon ECR" for provider. Under Container image URI, enter `AWS_ACCOUNT_ID.dkr.ecr.REGION.amazonaws.com/simple-express-repository:latest` from above, substituting your AWS_ACCOUNT_ID in, along with your REGION.
 
 Select the service role you created above, and proceed to Next.
 
