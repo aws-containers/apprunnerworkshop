@@ -31,6 +31,8 @@ aws ecr get-login-password --region REGION | docker login --username AWS --passw
 
 docker build -t simple-express-container .
 
+docker tag simple-express-container:latest AWS_ACCOUNT_ID.dkr.ecr.REGION.amazonaws.com/simple-express-container:latest
+
 docker push AWS_ACCOUNT_ID.dkr.ecr.REGION.amazonaws.com/simple-express-container:latest
 ```
 
