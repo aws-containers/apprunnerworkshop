@@ -71,7 +71,7 @@ Attach a policy to this role which allows access to the ECR repository in questi
 }
 ```
 
-Once your role is created with access to ECR, return to https://console.aws-dev.amazon.com/apprunner/home#/create to create an App Runner service using a Dockerfile.
+Once your role is created with access to ECR, return to https://console.aws.amazon.com/apprunner/home#/create to create an App Runner service using a Dockerfile.
 
 ![Create Service](/images/docker-build1.png)
 
