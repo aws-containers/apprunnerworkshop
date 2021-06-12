@@ -19,7 +19,7 @@ _Create an App Runner service_.
 For _Repository type_, select _Container registry_, and for _Provider_, select _Amazon ECR_, as we
 will be using the image we have previously built and pushed to our private ECR repository.
 
-![Configure Service](/images/container-image/configure-source-deployment.png)
+![Configure Service](/images/intermediate/container-image/configure-source-deployment.png)
 
 In the _Container image URI_ input, enter the full URI for our image, you can get it by typing the
 following command in your terminal:
@@ -32,7 +32,7 @@ $ echo $ECR_REPOSITORY_URI:demo
 In the _Deployment settings_ section, select _Automatic_ as the deployment trigger. And for ECR
 access role, select the role name we've previously created
 
-![Configure Deployment Settings](/images/container-image/configure-deployment-settings.png)
+![Configure Deployment Settings](/images/intermediate/container-image/configure-deployment-settings.png)
 
 Then, click _Next_.
 
@@ -41,7 +41,7 @@ Then, click _Next_.
 On the next page, we will configure our service, first, select a name for your service, enter
 `apprunnerworkshop-app`, and leave the rest with default values
 
-![Configure Service](/images/container-image/configure-service.png)
+![Configure Service](/images/intermediate/container-image/configure-service.png)
 
 n the _Security_ section, we are going to configure an _Instance role_ to use, this will allow
 AWS App Runner to access the DynamoDB table we created in the pre-requisities section.
@@ -53,7 +53,7 @@ $ aws cloudformation describe-stacks --stack-name repostatus-gh-demo-infra --que
 repostatus-gh-demo-infra-Role-1T58V5WPCQH6S
 ```
 
-![Configure Service](/images/container-image/configure-service-security.png)
+![Configure Service](/images/intermediate/container-image/configure-service-security.png)
 
 Go ahead and click _Next_.
 
@@ -62,7 +62,7 @@ Go ahead and click _Next_.
 Review our settings, and if everything looks good, click _Create & Deploy_. This step will take
 a few minutes.
 
-![Github Link](/images/container-image/service-deploying.png)
+![Github Link](/images/intermediate/container-image/service-deploying.png)
 
 ## Test the app
 

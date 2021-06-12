@@ -14,12 +14,12 @@ identifies the change to our code, and builds and deploys the new version.
 Browse to https://github.com/[YOUR_GITHUB_USER]/repostatus-gh-demo/edit/main/templates/repo.html to
 get a browser editor. You should see something similar to the below
 
-![GitHub editor](/images/github-editor.png)
+![GitHub editor](/images/intermediate/github-editor.png)
 
 Let's change the appearance of our app by making the text bold, wrap the text in the template with
 `<b>` and `</b>`, so that you end up with `<b>This is the page for repostiory: {{ repo.repo_slug }}, contains data: {{ repo.data }}</b>`
 
-![GitHub editor](/images/github-commit-change.png)
+![GitHub editor](/images/intermediate/github-commit-change.png)
 
 Click _Commit changes_.
 
@@ -28,7 +28,7 @@ Click _Commit changes_.
 Shortly after commiting the changes to your repository, AWS App Runner will start a new deployment
 activity. Go to _Services -> apprunnerworkshop-app_ in the AWS App Runner console.
 
-![AppRunner Deployment](/images/deployment-activity.png)
+![AppRunner Deployment](/images/intermediate/deployment-activity.png)
 
 And you should see a new activity related to the change you just introduced.
 

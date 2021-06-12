@@ -11,7 +11,7 @@ In this section, we will configure a few settings for your AWS App Runner servic
 
 ## Configure Deployment Settings
 
-![Github Link](/images/service-deployment1.png)
+![Github Link](/images/intermediate/service-deployment1.png)
 
 In the _Deployment Settings -> Deployment trigger_, select _"Automatic"_, so that AWS App Runner
 automatically newly introduced code changes from your `main` branch as defined above.
@@ -20,7 +20,7 @@ Click next.
 
 ## Configure Build Settings
 
-![Github Link](/images/service-deployment2.png)
+![Github Link](/images/intermediate/service-deployment2.png)
 
 In this example, we are going to specify all the settings for our service manually. This is in order
 to show the control that AWS App Runner gives you. Later we will demonstrate giving these settings
