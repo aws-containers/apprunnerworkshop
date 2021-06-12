@@ -22,4 +22,5 @@ CloudFormation, let's clean those up as well:
 
 ```shell
 $ aws cloudformation delete-stack --stack-name repostatus-gh-demo-infra
+$ aws iam delete-role --role-name $ROLE_NAME
 ```
