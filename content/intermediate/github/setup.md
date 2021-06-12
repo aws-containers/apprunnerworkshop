@@ -38,11 +38,11 @@ Select ‘Next’ to continue.
 
 ## Configure service
 
-![Github Link](/images/service-deployment3.png)
+![Github Link](/images/intermediate/service-deployment3.png)
 
 In this step we will give our new service a name - `apprunnerworkshop-app`.
 
-![Configure Service Role](/images/service-deployment-role.png)
+![Configure Service Role](/images/intermediate/service-deployment-role.png)
 
 In the _Security_ section, we are going to configure an _Instance role_ to use, this will allow
 AWS App Runner to access the DynamoDB table we created in the pre-requisities section.
@@ -56,11 +56,11 @@ repostatus-gh-demo-infra-Role-1T58V5WPCQH6S
 
 Leave the rest of these settings as defaults. Select “Next” to continue.
 
-![Github Link](/images/service-deployment4.png)
+![Github Link](/images/intermediate/service-deployment4.png)
 
 Finally, review your settings and select “Create & deploy”. This will take a few minutes.
 
-![Github Link](/images/service-creating.png)
+![Github Link](/images/intermediate/service-creating.png)
 
 ## Test the app
 
