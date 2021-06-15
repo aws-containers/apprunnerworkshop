@@ -56,7 +56,7 @@ finished, the status will transtion to _Running_.
 We can then validate that our deployment have succeeded, as we should now see a bold font when
 visiting `https://[DOMAIN_HERE]/repo/[YOUR_GITHUB_USERNAME]/repostatus-gh-demo`.
 
-![Deployed App](/images/container-image/deployed-app.png)
+![Deployed App](/images/intermediate/container-image/deployed-app.png)
 
 That's it! We have deployed a new version of our app simply by pushing our newly built container
 image.
