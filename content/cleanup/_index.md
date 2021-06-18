@@ -21,6 +21,7 @@ $ aws cloudformation delete-stack --stack-name repostatus-gh-demo-infra
 ## IAM role for ECR access
 
 ```shell
+$ aws iam detach-role-policy --role-name $ROLE_NAME --policy-arn arn:aws:iam::aws:policy/service-role/AWSAppRunnerServicePolicyForECRAccess
 $ aws iam delete-role --role-name $ROLE_NAME
 ```
 

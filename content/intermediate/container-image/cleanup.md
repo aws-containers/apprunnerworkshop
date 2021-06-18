@@ -22,5 +22,6 @@ CloudFormation, let's clean those up as well:
 
 ```shell
 $ aws cloudformation delete-stack --stack-name repostatus-gh-demo-infra
+$ aws iam detach-role-policy --role-name $ROLE_NAME --policy-arn arn:aws:iam::aws:policy/service-role/AWSAppRunnerServicePolicyForECRAccess
 $ aws iam delete-role --role-name $ROLE_NAME
 ```
