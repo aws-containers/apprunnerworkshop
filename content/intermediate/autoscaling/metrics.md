@@ -11,9 +11,9 @@ It takes a few minutes to see changes in our App Runner service.
 
 The request count will have a peak. The number of active instances will increase as shown in the following screenshots.
 
-![Request Count](/images/intermediate/autoscaling/service-autoscaling-request-count-new.png)
+![Request Count](/images/intermediate/autoscaling/service-autoscaling-request-count.png)
 
-![Active Instances](/images/intermediate/autoscaling/service-autoscaling-active-instances-new.png)
+![Active Instances](/images/intermediate/autoscaling/service-autoscaling-active-instances.png)
 
 Click on the three dots next to a metric field and select "Enlarge" to view the metric in a larger window, or click "View in metrics" to explore the metrics in the Cloudwatch console.
 
