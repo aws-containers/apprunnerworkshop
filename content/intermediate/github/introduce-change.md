@@ -23,7 +23,7 @@ Let's change the appearance of our app by making the text bold, wrap the text in
 
 Click _Commit changes_.
 
-## Valiate the deployment
+## Validate the deployment
 
 Shortly after commiting the changes to your repository, AWS App Runner will start a new deployment
 activity. Go to _Services -> apprunnerworkshop-app_ in the AWS App Runner console.
