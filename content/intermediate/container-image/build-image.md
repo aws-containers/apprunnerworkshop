@@ -26,7 +26,7 @@ Let's have a look:
 $ cat ~/environment/repostatus-gh-demo/Dockerfile
 ```
 
-Let's go ahead and build of our app.
+Let's go ahead and build our app.
 
 ```shell
 $ cd ~/environment/repostatus-gh-demo
