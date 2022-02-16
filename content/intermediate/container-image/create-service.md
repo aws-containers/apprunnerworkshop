@@ -43,7 +43,7 @@ On the next page, we will configure our service, first, select a name for your s
 
 ![Configure Service](/images/intermediate/container-image/configure-service.png)
 
-n the _Security_ section, we are going to configure an _Instance role_ to use, this will allow
+In the _Security_ section, we are going to configure an _Instance role_ to use, this will allow
 AWS App Runner to access the DynamoDB table we created in the pre-requisities section.
 
 The value in the drop-down should match the output from the following command:
